@@ -1,27 +1,28 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+#include <stdio.h>
+/**
+ * main - main block
+ * Description:  prints the alphabet in lowercase,
+ * and then in uppercase, followed by a new line.
+ * Return: 0
+ */
 int main(void)
 {
-	int n;
+	char Chala = 'a';
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	char chala = 'a';
-	while (chala<='z')
-	{
-		putchar(chala);
-		chala++;
-	}
-	char Chala='A';
-	while(Chala<='z')
+	while (Chala <= 'z')
 	{
 		putchar(Chala);
 		Chala++;
 	}
+
+	char chala = 'A';
+
+	while (chala <= 'Z')
+	{
+		putchar(chala);
+		chala++;
+	}
+
 	putchar('\n');
 	return (0);
 }
